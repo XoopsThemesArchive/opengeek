@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_imageurl}>favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_themecss}>" />
+<!-- OPENGEEK :: rmv: ADDED MODULE HEADER -->
+<{$xoops_module_header}>
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+</head>
+<body>
+<table cellspacing="0">
+<tr id="header">
+<td id="headerlogo"><a href="http://opengeek.zonahardcore.com/"><img src="<{$xoops_imageurl}>imagens/logo.png" alt="" /></a></td>
+<td id="headerbanner"><{$xoops_banner}></td>
+</tr>
+<tr>
+<td id="headerbar" colspan="2">&nbsp;</td>
+</tr>
+</table>
+<table cellspacing="0">
+<tr>
+<td id="leftcolumn">
+<!-- OPENGEEK :: sTART lEFT bLOCKS L00Pz -->
+<{foreach item=block from=$xoops_lblocks}>
+<div class="blockTitle"><{$block.title}></div>
+<div class="blockContent"><{$block.content}></div>
+<{/foreach}>
+<!-- OPENGEEK :: eND lEFT bLOCKS L00Pz -->
+</td>
+<td id="centercolumn">
+<!-- OPENGEEK :: dISPLAY cENTER bLOCKS iF aNY -->
+<{if $xoops_showcblock == 1}>
+<table cellspacing="0">
+<tr>
+<td id="centerCcolumn" colspan="2">
+<!-- OPENGEEK :: sTART cENTER-cENTER bLOCKS L00Pz -->
+<{foreach item=block from=$xoops_ccblocks}>
+<div style="padding: 5px;">
+<fieldset>
+<legend class="blockTitle"><{$block.title}></legend>
+<div class="blockContent"><{$block.content}></div>
+</fieldset>
+</div>
+<{/foreach}>
+<!-- OPENGEEK :: eND cENTER-cENTER bLOCKS L00Pz -->
+</td>
+</tr>
+<tr>
+<td id="centerLcolumn">
+<!-- OPENGEEK :: sTART cENTER-lEFT bLOCKS L00Pz -->
+<{foreach item=block from=$xoops_clblocks}>
+<div style="padding: 0px 0px 0px 8px;">
+<fieldset>
+<legend class="blockTitle"><{$block.title}></legend>
+<div class="blockContent"><{$block.content}></div>
+</fieldset>
+</div>
+<{/foreach}>
+<!-- OPENGEEK :: eND cENTER-lEFT bLOCKS L00Pz -->
+</td><td id="centerRcolumn">
+<!-- OPENGEEK :: sTART cENTER-rIGHT bLOCKS L00Pz -->
+<{foreach item=block from=$xoops_crblocks}>
+<div style="padding: 0px 5px 0px 0px;">
+<fieldset>
+<legend class="blockTitle"><{$block.title}></legend>
+<div class="blockContent"><{$block.content}></div>
+</fieldset>
+</div>
+<{/foreach}>
+<!-- OPENGEEK :: END c3Nt3R-RIGHT bL0cKz L00Pz -->
+</td>
+</tr>
+</table>
+<{/if}>
+<!-- OPENGEEK :: END DISPLAY c3Nt3R bL0cKz -->
+<div id="content">
+<{$xoops_contents}>
+</div>
+</td>
+<{if $xoops_showrblock == 1}>
+<td id="rightcolumn">
+<!-- OPENGEEK :: START RIGHT bL0cKz L00Pz -->
+<{foreach item=block from=$xoops_rblocks}>
+<div class="blockTitle"><{$block.title}></div>
+<div class="blockContent"><{$block.content}></div>
+<{/foreach}>
+<!-- OPENGEEK :: END RIGHT bL0cKz L00Pz -->
+</td>
+<{/if}>
+</tr>
+</table>
+<table cellspacing="0">
+<tr id="footerbar">
+<td align="right" style="font-size:.7em;">
+<{$xoops_footer}>
+</td>
+</tr>
+</table>
+</body>
+</html>
